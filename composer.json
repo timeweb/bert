@@ -1,6 +1,6 @@
 {
-  "name": "Timeweb/bert",
-  "version": "0.1",
+  "name": "timeweb/bert",
+  "version": "0.1.1",
   "require-dev": {
     "phpunit/phpunit": "5.5.5"
   },
