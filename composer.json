@@ -1,0 +1,12 @@
+{
+  "name": "Timeweb/bert",
+  "version": "0.1",
+  "require-dev": {
+    "phpunit/phpunit": "5.5.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "bert\\": "src"
+    }
+  }
+}
