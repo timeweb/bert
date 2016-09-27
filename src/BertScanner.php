@@ -7,7 +7,7 @@ use bert\term\TermInterface;
 class BertScanner
 {
     /**
-     * @param $stream
+     * @param string $stream
      * @return TermInterface
      */
     public static function scan($stream)
