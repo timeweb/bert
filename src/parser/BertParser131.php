@@ -5,7 +5,7 @@ use bert\term\BertTermFactory;
 
 class BertParser131 extends AbstractBertParser
 {
-    const UNCOMPRESSED_DATA_OFFSET = 2;
+    const UNCOMPRESSED_DATA_OFFSET = 1;
     const COMPRESSED_DATA_OFFSET = 6;
     const MIN_STREAM_LENGTH = self::UNCOMPRESSED_DATA_OFFSET;
 
@@ -17,7 +17,7 @@ class BertParser131 extends AbstractBertParser
 
     public function validateStream()
     {
-        if (strlen($this->rawStream) < self::MIN_STREAM_LENGTH) {
+        if (strlen($this->rawStream) <= self::MIN_STREAM_LENGTH) {
             $msg = sprintf('Min stream length is %s.', self::MIN_STREAM_LENGTH);
             throw new \LengthException($msg);
         }

@@ -1,7 +1,7 @@
 <?php
 namespace bert\term;
 
-class MapTerm implements TermInterface
+class MapTerm implements ArrayTermInterface
 {
     /**
      * @var array
