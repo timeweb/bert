@@ -1,6 +1,6 @@
 Tests
 -----
-vendor/bin/phpunit src/tests/
+vendor/bin/phpunit
 
 Resources
 ---------
